@@ -3,4 +3,9 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="AppTittle">Routes Conductor</string>
+
+    <string name="LOCATION_TRACKING_API_URL">https://tuservidor.com/api/</string>
+
+
 </resources>

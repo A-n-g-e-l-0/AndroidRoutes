@@ -13,8 +13,10 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        android.buildFeatures.buildConfig = true
+        buildConfigField("String", "LOCATION_TRACKING_API_URL", "\"https://tuservidor.com/api/ubicacion/\"")
+
     }
 
     buildTypes {
@@ -51,4 +53,11 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation(libs.gms.maps)
+    implementation(libs.gms.location)
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.gson)
+    implementation(libs.coroutines.android)
+
 }
